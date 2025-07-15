@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla de mi carrera</title>
+  <style>
+    body { font-family: sans-serif; }
+    .materia {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .aprobada { background: #a0f0a0; }
+    .cursando { background: #f0e68c; }
+    .pendiente { background: #f08080; }
+  </style>
+</head>
+<body>
+  <h1>Malla interactiva</h1>
+  <div class="materia aprobada" onclick="alert('Matemática I - Aprobada')">Matemática I</div>
+  <div class="materia cursando" onclick="alert('Física I - Cursando')">Física I</div>
+  <div class="materia pendiente" onclick="alert('Programación I - Pendiente')">Programación I</div>
+</body>
+</html>
