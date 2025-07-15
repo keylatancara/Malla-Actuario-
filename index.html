@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Malla de mi carrera</title>
-  <style>
-    body { font-family: sans-serif; }
-    .materia {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px;
-      border: 2px solid #333;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .aprobada { background: #a0f0a0; }
-    .cursando { background: #f0e68c; }
-    .pendiente { background: #f08080; }
-  </style>
+    <meta charset="UTF-8" />
+    <title>Malla Interactiva</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Malla interactiva</h1>
-  <div class="materia aprobada" onclick="alert('Matemática I - Aprobada')">Matemática I</div>
-  <div class="materia cursando" onclick="alert('Física I - Cursando')">Física I</div>
-  <div class="materia pendiente" onclick="alert('Programación I - Pendiente')">Programación I</div>
+    <h1>Malla Interactiva - Carrera Actuario</h1>
+    <div class="tramo" id="tramo-1">
+        <h2>Primer tramo</h2>
+        <div class="ramos">
+            <div class="ramo" data-nombre="Álgebra"></div>
+            <div class="ramo" data-nombre="Análisis matemático I"></div>
+            <div class="ramo" data-nombre="Economía"></div>
+            <div class="ramo" data-nombre="Historia económica, social y general"></div>
+            <div class="ramo" data-nombre="Análisis contable"></div>
+            <div class="ramo" data-nombre="Instituciones de gobierno y economía política"></div>
+        </div>
+    </div>
+
+    <div class="tramo bloqueado" id="tramo-2">
+        <h2>Segundo tramo</h2>
+        <div class="ramos">
+            <div class="ramo" data-nombre="Macroeconomía I"></div>
+            <div class="ramo" data-nombre="Análisis Estadístico"></div>
+            <div class="ramo" data-nombre="Matemática Aplicada I"></div>
+            <div class="ramo" data-nombre="Derecho Empresarial"></div>
+            <div class="ramo" data-nombre="Sistemas Administrativos"></div>
+
+            <div class="ramo bloqueado" data-nombre="Análisis Estadístico II"></div>
+            <div class="ramo bloqueado" data-nombre="Matemática Financiera y Actuarial"></div>
+            <div class="ramo bloqueado" data-nombre="Microeconomía para Economistas"></div>
+            <div class="ramo bloqueado" data-nombre="Matemática Aplicada II"></div>
+            <div class="ramo bloqueado" data-nombre="Computación Científica Actuarial"></div>
+            <div class="ramo bloqueado" data-nombre="Derecho Financiero, Seguros y Seguridad Social"></div>
+            <div class="ramo bloqueado" data-nombre="Administración Financiera"></div>
+            <div class="ramo bloqueado" data-nombre="Dinero y Bancos"></div>
+            <div class="ramo bloqueado" data-nombre="Análisis Numérico"></div>
+            <div class="ramo bloqueado" data-nombre="Estadística Actuarial"></div>
+            <div class="ramo bloqueado" data-nombre="Bases Actuariales de las Inversiones y Financiaciones"></div>
+            <div class="ramo bloqueado" data-nombre="Biometría Actuarial"></div>
+            <div class="ramo bloqueado" data-nombre="Teoría Actuarial de los Seguros Patrimoniales"></div>
+            <div class="ramo bloqueado" data-nombre="Teoría Actuarial de los Seguros Personales"></div>
+            <div class="ramo bloqueado" data-nombre="Teoría Actuarial de los Fondos y Planes de Jubilaciones, Pensiones y Salud"></div>
+            <div class="ramo bloqueado" data-nombre="Práctica Profesional del Actuario"></div>
+            <div class="ramo bloqueado" data-nombre="Teoría del Equilibrio Actuarial"></div>
+            <div class="ramo bloqueado" data-nombre="Modelos y Proyecciones Actuariales"></div>
+            <div class="ramo bloqueado" data-nombre="Optativa 1"></div>
+            <div class="ramo bloqueado" data-nombre="Optativa 2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
